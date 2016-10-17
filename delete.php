@@ -1,11 +1,8 @@
 <html>
 <body>
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "root";
-$dbname = "iodparts";
-session_start();
+require 'database.php';
+
 try 
 {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
@@ -20,15 +17,7 @@ try
       if($result)
        {
       header('location:list.php');
-      if(!isset($_SESSION['status'])){
-   
-    $_SESSION['status']="record deleted...";
-}
-else{
-   $status=$_SESSION['status'];
-}
-      $_SESSION["status"]="record deleted...";
-      //echo"record deleted..";
+    
        }
        }
 }
