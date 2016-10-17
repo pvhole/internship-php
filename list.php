@@ -15,10 +15,7 @@ try
     //$result = $query1->fetch(PDO::FETCH_ASSOC);
    echo "<table>";
    echo "<tr><th>ID</th><th>LOCATION ID</th><th>DESCRIPTION</th><th>QUANTITY</th><th>VALUE</th><th>PRICE</th><th></th><th></th><th></th></tr>";
-
-   echo "".$_SESSION['status'];
-
-foreach( $query1  as $row)
+   foreach( $query1  as $row)
     {
     echo "<tr>";
     echo "<td>".$row['id']."</td>";
