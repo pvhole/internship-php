@@ -29,29 +29,31 @@ require 'script1.php';
   <center><h1>Write SQL, Print HTML Table</h1></center>
   <div class="row">
     <div class="col-md-4">
+      <div class="jumbotron">
       <p>1. Select all transactions where quantity > 100 and price > 500.</p>
       <p>2. Prepare a report of transactions by Location ID
 Eg:
 
 Location ID, Number of Transactions
 1     1500
-2    3000.</p>    
+2    3000.</p>  </div>  
     </div>
-    <div class="col-md-4"> 
-      <p>3) Prepare a report of transactions where Quantity is 0, or Price is 0, or Value is 0.</p>
+    <div class="col-md-4"> <div class="jumbotron">
+      <p>3) Prepare a report of transactions where Quantity is 0, or Price is 0, or Value is 0.</p></div>
      </div>
     <div class="col-md-4"> 
+      <div class="jumbotron">
       <p>Display 4 pages:.</p>
       <p>Select any 5 attributes (including id)</p> 
       <p>1. List of first 100 transactions in HTML Table (list.php</p>
       <p>2. Link to view, edit and delete each transaction </p>
       <p>3. View page which displays all attributes of transactions (eg: view.php?id=1001)</p>
       <p>4. Edit one transaction and update the same using a HTML Form (eg: edit.php?id=1001)</p>
-      <p>5. Delete a transaction (eg: delete.php?id=1001)</p>
+      <p>5. Delete a transaction (eg: delete.php?id=1001)</p></div>
     </div>
   </div>
 </div>
-</div>
+
 
 <nav class="navbar navbar-inverse navbar-fixed-bottom">
   <div class="container-fluid">
