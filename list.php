@@ -1,8 +1,8 @@
 <html>
 <head>
-   <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-   <script src="/scripts/jquery.min.js"></script>
-   <script src="/bootstrap/js/bootstrap.min.js"></script>
+   <?php
+require 'script1.php';
+ ?> 
 </head>
 <body>
 <?php
