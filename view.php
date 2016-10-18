@@ -5,7 +5,7 @@ require 'script1.php';
  ?> 
 </head>
 <body>
-<div class="container">
+<div class="container"style="margin-top:50px">
 
 <?php
 require 'database.php';
