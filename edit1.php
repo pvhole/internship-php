@@ -1,5 +1,19 @@
 <html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
 <body>
+<div class="container">
 <?php
 require 'database.php';
 try
@@ -35,16 +49,36 @@ if(isset($_GET['id']))
    foreach( $query1  as $row)
    {
    ?>
-<form method="post" action="">
-ID:<input type="text" name="name" value="<?php echo $row['id']; ?>" /><br />
-
-DESCRIPTION:<input type="text" name="description" value="<?php echo $row['description']; ?>" /><br /><br />
-QUANTITY:<input type="text" name="quantity" value="<?php echo $row['quantity']; ?>" /><br /><br />
-VALUE:<input type="text" name="value" value="<?php echo $row['value']; ?>" /><br /><br />
-PRICE:<input type="text" name="price" value="<?php echo $row['price']; ?>" /><br /><br />
-<br />
-<input type="submit" name="submit" value="update" />
+<form class="form-horizontal"method="post"action="">
+<center><h1>EDIT DATA</h1></center>
+<div class="form-group">
+      <label for="usr">ID:</label>
+      <input type="text" class="form-control"name="id" id="disabledInput"value="<?php echo $row['id']; ?>"disabled>
+ </div>
+<div class="form-group">
+      <label for="usr">LOCATION ID:</label>
+      <input type="text" class="form-control"name="location_id" id="disabledInput"value="<?php echo $row['location_id']; ?>" readonly>
+ </div>
+<div class="form-group">
+      <label for="usr">DESCRIPTION::</label>
+      <input type="text" class="form-control"name="description" id="focusedInput" value="<?php echo $row['description']; ?>">
+ </div>
+<div class="form-group">
+      <label for="usr">QUANTITY:</label>
+      <input type="text" class="form-control"name="quantity" value="<?php echo $row['quantity']; ?>">
+ </div>
+<div class="form-group">
+      <label for="usr">VALUE:</label>
+      <input type="text" class="form-control"name="value" value="<?php echo $row['value']; ?>">
+ </div>
+<div class="form-group">
+      <label for="usr">PRICE:</label>
+      <input type="text" class="form-control" name="price"value="<?php echo $row['price']; ?>">
+ </div>
+<center><input type="submit" name="submit" class="btn btn-primary btn-lg"value="update" /></center>
+</div>
 </form>
+
 <?php
 }
 }
@@ -58,7 +92,6 @@ $conn = null;
 ?>
 </body>
 </html>
-
 
 
 
