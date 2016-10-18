@@ -1,6 +1,26 @@
- <?php
-echo "<table style='border: solid 1px black;'>";
-echo "<tr><th>Location_Id</th><th>No Of Trasaction</th></tr>";
+<html lang="en">
+<head>
+  <title>Second Assignment...</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head> 
+<body>
+<div class="container">
+<p> 2. Prepare a report of transactions by Location ID</p>
+  <center><h2>RECORD</h2></center>
+           
+  <table class="table table-striped">
+  <thead>
+      <tr>
+        <th><center>LOCATION ID</center></th>
+        <th><center>NO OF TRANSACTION</center></th>
+      </tr>
+    </thead>
+<?php
+
 
 class TableRows extends RecursiveIteratorIterator 
 {
@@ -25,7 +45,13 @@ class TableRows extends RecursiveIteratorIterator
     } 
 
 }
+/*
+$servername = "localhost";
+$username = "root";
+$password = "root";
+$dbname = "iodparts";*/
 require 'database.php';
+
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
    
@@ -46,3 +72,7 @@ catch(PDOException $e)
 
 $conn = null;
 ?> 
+</table>
+</div>
+</body>
+</html>
