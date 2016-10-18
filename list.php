@@ -55,7 +55,7 @@ foreach( $query1  as $row)
     echo "<td>".$row['quantity']."</td>";
     echo "<td>".$row['value']."</td>";
     echo "<td>".$row['price']."</td>"; 
-    echo"<td><a href='view1.php?id=".$row['id']."'>View</a></td>";
+    echo"<td><a href='view.php?id=".$row['id']."'>View</a></td>";
     echo" <td><a href='edit1.php?id=".$row['id']."'>Edit</a></td>";
      echo" <td><a href='delete.php?id=".$row['id']."'>Delete</a></td>";
     
