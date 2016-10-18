@@ -1,5 +1,20 @@
 <html>
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
 <body>
+<div class="container">
+
 <?php
 require 'database.php';
 include 'stylesheet.css';
@@ -45,16 +60,40 @@ if(isset($_GET['id']))
   foreach( $query1  as $row)
    {
    ?>
-<form method="post" action="">
-<table>
-<tr><td>ID:<input type="text" name="name" value="<?php echo $row['id']; ?>" /><br /></td></tr>
+<form class="form-horizontal"method="post"action="">
 
-<tr><td>DESCRIPTION:<input type="text" name="description" value="<?php echo $row['description']; ?>" /><br /><br /></td></tr>
-<tr><td>QUANTITY:<input type="text" name="quantity" value="<?php echo $row['quantity']; ?>" /><br /><br /></td></tr>
-<tr><td>VALUE:<input type="text" name="value" value="<?php echo $row['value']; ?>" /><br /><br /></td></tr>
-<tr><td>PRICE:<input type="text" name="price" value="<?php echo $row['price']; ?>" /><br /><br /></td></tr>
-<br />
->
+<center><h1>VIEW DATA</h1></center>
+
+
+<div class="form-group">
+      <label for="usr">ID:</label>
+      <input type="text" class="form-control" id="id"value="<?php echo $row['id']; ?>">
+ </div>
+<div class="form-group">
+      <label for="usr">LOCATION ID:</label>
+      <input type="text" class="form-control" id="location_id"value="<?php echo $row['location_id']; ?>">
+ </div>
+<div class="form-group">
+      <label for="usr">DESCRIPTION::</label>
+      <input type="text" class="form-control" id="description"value="<?php echo $row['description']; ?>">
+ </div>
+<div class="form-group">
+      <label for="usr">QUANTITY:</label>
+      <input type="text" class="form-control" id="quantity"value="<?php echo $row['quantity']; ?>">
+ </div>
+<div class="form-group">
+      <label for="usr">VALUE:</label>
+      <input type="text" class="form-control" id="value"value="<?php echo $row['value']; ?>">
+ </div>
+<div class="form-group">
+      <label for="usr">PRICE:</label>
+      <input type="text" class="form-control" id="price"value="<?php echo $row['price']; ?>">
+ </div>
+
+
+
+
+</div>
 </form>
 <?php
 }
@@ -67,9 +106,9 @@ catch(PDOException $e)
 $conn = null;
 
 ?>
+
 </body>
 </html>
-
 
 
 
