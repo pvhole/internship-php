@@ -6,7 +6,7 @@ require 'script1.php';
  ?> 
 </head> 
 <body>
-<div class="container">
+<div class="container"style="margin-top:50px">
 <p>3. Prepare a report of transactions where Quantity is 0, or Price is 0, or Value is 0.</p>
   <center><h2>RECORD</h2></center>
            
