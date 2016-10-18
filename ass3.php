@@ -1,6 +1,29 @@
- <?php
-echo "<table style='border: solid 1px black;'>";
-echo "<tr><th>Id</th><th>Location_Id</th><th>Quantity</th><th>value</th><th>price</th></tr>";
+<html lang="en">
+<head>
+  <title> Assignment NO 3...</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head> 
+<body>
+<div class="container">
+<p>3. Prepare a report of transactions where Quantity is 0, or Price is 0, or Value is 0.</p>
+  <center><h2>RECORD</h2></center>
+           
+  <table class="table table-striped">
+  <thead>
+      <tr>
+        <th>ID</th>
+        <th>LOCATION ID</th>
+        <th>QUANTITY</th>
+        <th>VALUE</th>
+        <th>PRICE</th>
+      </tr>
+    </thead> 
+<?php
+
 
 class TableRows extends RecursiveIteratorIterator 
 {
@@ -25,7 +48,9 @@ class TableRows extends RecursiveIteratorIterator
     } 
 
 }
+
 require 'database.php';
+
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     // set the PDO error mode to exception
@@ -51,3 +76,7 @@ catch(PDOException $e)
 
 $conn = null;
 ?> 
+</table>
+</div>
+</body>
+</html>
