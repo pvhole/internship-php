@@ -6,7 +6,7 @@ require 'script1.php';
  ?> 
 </head> 
 <body>
-<div class="container">
+<div class="container"style="margin-top:50px">
 <p> 2. Prepare a report of transactions by Location ID</p>
   <center><h2>RECORD</h2></center>
            
