@@ -59,27 +59,27 @@ if(isset($_GET['id']))
 
 <div class="form-group">
       <label for="usr">ID:</label>
-      <input type="text" class="form-control" id="id"value="<?php echo $row['id']; ?>">
+      <input type="text" class="form-control" id="id"value="<?php echo $row['id']; ?>"readonly>
  </div>
 <div class="form-group">
       <label for="usr">LOCATION ID:</label>
-      <input type="text" class="form-control" id="location_id"value="<?php echo $row['location_id']; ?>">
+      <input type="text" class="form-control" id="location_id"value="<?php echo $row['location_id']; ?>"readonly>
  </div>
 <div class="form-group">
       <label for="usr">DESCRIPTION::</label>
-      <input type="text" class="form-control" id="description"value="<?php echo $row['description']; ?>">
+      <input type="text" class="form-control" id="description"value="<?php echo $row['description']; ?>"readonly>
  </div>
 <div class="form-group">
       <label for="usr">QUANTITY:</label>
-      <input type="text" class="form-control" id="quantity"value="<?php echo $row['quantity']; ?>">
+      <input type="text" class="form-control" id="quantity"value="<?php echo $row['quantity']; ?>"readonly>
  </div>
 <div class="form-group">
       <label for="usr">VALUE:</label>
-      <input type="text" class="form-control" id="value"value="<?php echo $row['value']; ?>">
+      <input type="text" class="form-control" id="value"value="<?php echo $row['value']; ?>"readonly>
  </div>
 <div class="form-group">
       <label for="usr">PRICE:</label>
-      <input type="text" class="form-control" id="price"value="<?php echo $row['price']; ?>">
+      <input type="text" class="form-control" id="price"value="<?php echo $row['price']; ?>"readonly>
  </div>
 
 
