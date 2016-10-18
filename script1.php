@@ -19,7 +19,9 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="home.php">Home</a></li>
-      <li><a href="list.php">list</a></li>
+      <li><a href="list.php">
+          <span class="glyphicon glyphicon-th-list"></span> Th List
+        </a></li>
       <li><a href="firstAss1.php">Ass1</a></li>
       <li><a href="ass2.php">Ass2</a></li>
       <li><a href="ass3.php">Ass3</a></li>
@@ -34,7 +36,9 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="home.php">Home</a></li>
-      <li><a href="list.php">list</a></li>
+      <li><a href="list.php">
+          <span class="glyphicon glyphicon-th-list"></span> Th List
+        </a></li>
       <li><a href="firstAss1.php">Ass1</a></li>
       <li><a href="ass2.php">Ass2</a></li>
       <li><a href="ass3.php">Ass3</a></li>
